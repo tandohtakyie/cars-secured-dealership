@@ -1,7 +1,8 @@
-package com.example.cars_secured_dealership
+package com.example.cars_secured_dealership.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.cars_secured_dealership.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

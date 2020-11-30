@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:orientation="vertical"
+                                                   android:background="?attr/selectableItemBackground"
+                                                   android:paddingTop="8dp"
+                                                   android:paddingBottom="8dp"
+                                                   android:layout_marginStart="6dp"
+                                                   android:layout_marginEnd="6dp">
+
+    <TextView
+            android:id="@+id/tv_carDeal"
+            style="@style/TotalsRvItems"
+            android:layout_width="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+            android:id="@+id/tv_country"
+            style="@style/TotalsRvItems"
+            android:layout_width="110dp"
+            app:layout_constraintStart_toEndOf="@id/tv_carDeal"
+            app:layout_constraintEnd_toStartOf="@id/tv_date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tv_date"
+            style="@style/TotalsRvItems"
+            android:layout_width="85dp"
+            app:layout_constraintStart_toEndOf="@id/tv_country"
+            app:layout_constraintEnd_toStartOf="@id/tv_amount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tv_amount"
+            style="@style/TotalsRvItems"
+            android:layout_width="65dp"
+            android:textAlignment="viewEnd"
+            app:layout_constraintStart_toEndOf="@id/tv_date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="end"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

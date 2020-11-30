@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingBottom="20dp"
+            tools:context=".fragment.TotalsFragment">
+
+        <!-- Main title -->
+        <TextView
+                android:id="@+id/text_title_totals"
+                style="@style/FragmentTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorWhite"
+                android:text="@string/totals_total_carDeals_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+                android:id="@+id/button_all"
+                style="@style/CountryButtons"
+                android:layout_width="0dp"
+                android:text="@string/country_all_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_title_totals" />
+
+        <Button
+                android:id="@+id/button_china"
+                style="@style/CountryButtons"
+                android:text="@string/country_china_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_all"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_united_states"
+                style="@style/CountryButtons"
+                android:text="@string/country_united_states_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_china"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+                android:id="@+id/button_japan"
+                style="@style/CountryButtons"
+                android:text="@string/country_japan_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_united_states"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+                android:id="@+id/button_south_korea"
+                style="@style/CountryButtons"
+                android:text="@string/menu_home_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_japan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+                android:id="@+id/button_spain"
+                style="@style/CountryButtons"
+                android:text="@string/country_spain_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_south_korea"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_own_place"
+                style="@style/CountryButtons"
+                android:text="@string/country_own_place_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_spain"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_france"
+                style="@style/CountryButtons"
+                android:text="@string/country_france_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_own_place"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_canada"
+                style="@style/CountryButtons"
+                android:text="@string/country_canada_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_france"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_italy"
+                style="@style/CountryButtons"
+                android:text="@string/country_italy_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_canada"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_germany"
+                style="@style/CountryButtons"
+                android:text="@string/country_germany_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_italy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_united_kingdom"
+                style="@style/CountryButtons"
+                android:text="@string/country_united_kingdom_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_germany"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+                android:id="@+id/button_netherlands"
+                style="@style/CountryButtons"
+                android:text="@string/country_netherlands_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_united_kingdom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_australia"
+                style="@style/CountryButtons"
+                android:text="@string/country_australia_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_netherlands"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_belgium"
+                style="@style/CountryButtons"
+                android:text="@string/country_belgium_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_australia"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+                android:id="@+id/button_south_africa"
+                style="@style/CountryButtons"
+                android:text="@string/country_south_africa_hint"
+                app:layout_constraintTop_toBottomOf="@+id/button_belgium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cars_secured_dealership.activity.MainActivity">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_menu_housing"
+        android:title="@string/menu_home_hint"/>
+    <item
+        android:id="@+id/totalsFragment"
+        android:icon="@drawable/ic_menu_totals"
+        android:title="@string/menu_totals_hint"/>
+    <item
+        android:id="@+id/addCarDealFragment"
+        android:icon="@drawable/ic_menu_add"
+        android:title="@string/menu_add_hint"/>
+</menu>

@@ -1,3 +1,67 @@
 <resources>
-    <string name="app_name">cars_secured_dealership</string>
+    <string name="app_name">CarDeal Secured</string>
+    <string name="menu_home_hint">Home</string>
+    <string name="menu_totals_hint">Totals</string>
+    <string name="menu_add_hint">Add</string>
+
+    <!-- General strings -->
+    <string name="title_carDeal_hint">Car Deals</string>
+    <string name="title_country_hint">Country</string>
+    <string name="title_amount_hint">Amount</string>
+    <string name="title_date_hint">Date</string>
+
+    <!-- HomeFragment -->
+    <string name="home_recent_activity_hint">Recent activity</string>
+
+    <!-- AddCarDealFragment -->
+    <string name="add_amount_format_hint">e.g. 1.20</string>
+    <string name="add_a_carDeal_hint">Add a CarDeal</string>
+
+    <!-- EditCarDealActivity -->
+    <string name="edit_hint">Edit carDeal</string>
+
+    <!-- CarDeal validation -->
+    <string name="validation_amount_hint">Please give a proper value for Amount (e.g. 1.20)</string>
+    <string name="validation_fields_hint">Please fill in all the fields</string>
+
+    <!-- Delete carDeals -->
+    <string name="delete_carDeal_deleted_hint">Car deal deleted</string>
+    <string name="delete_undo_hint">Undo</string>
+
+    <string name="delete_all_hint">Delete all car deals</string>
+    <string name="delete_first_confirmation_hint">Are you sure you want to delete all car deals of the current country?</string>
+    <string name="delete_second_confirmation_hint">Are you ABSOLUTELY sure? This action cannot be reversed!</string>
+    <string name="delete_yes_hint">Yes</string>
+    <string name="delete_cancel_hint">Cancel</string>
+    <string name="delete_deleted_hint">Car deals of this country deleted.</string>
+    <string name="delete_canceled_hint">Good choice.</string>
+
+    <!-- Totals -->
+    <string name="totals_total_carDeals_hint">Total car deals</string>
+
+    <string name="country_all_hint">All</string>
+    <string name="country_china_hint">China</string>
+    <string name="country_united_states_hint">United States</string>
+    <string name="country_japan_hint">Japan</string>
+    <string name="country_south_korea_hint">South Korea</string>
+    <string name="country_spain_hint">Spain</string>
+    <string name="country_own_place_hint">Own Place</string>
+    <string name="country_france_hint">France</string>
+    <string name="country_canada_hint">Canada</string>
+    <string name="country_italy_hint">Italy</string>
+    <string name="country_germany_hint">Germany</string>
+    <string name="country_united_kingdom_hint">United Kingdom</string>
+    <string name="country_netherlands_hint">Netherlands</string>
+    <string name="country_australia_hint">Australia</string>
+    <string name="country_belgium_hint">Belgium</string>
+    <string name="country_south_africa_hint">South Africa</string>
+
+    <string name="totals_carDeals_hint">- Car Deals: %s \u20ac</string>
+    <string name="totals_own_place_hint">+ Own Place: %s \u20ac</string>
+    <string name="totals_total_hint">Total: %s \u20ac</string>
+
+    <!-- Trivia -->
+    <string name="trivia_text_hint">Fortune of the day:\nFor good luck, hide %s %s under your bed because %s</string>
+    <string name="trivia_empty_hint">It\'s so empty in here…</string>
+
 </resources>

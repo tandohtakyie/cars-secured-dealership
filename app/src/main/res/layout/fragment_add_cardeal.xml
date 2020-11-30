@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".activity.AddCarDealFragment">
+
+        <!-- Main title -->
+        <TextView
+                android:id="@+id/text_title_add_carDeal"
+                style="@style/FragmentTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/add_a_carDeal_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- carDeal title -->
+        <TextView
+                android:id="@+id/text_carDeal_add"
+                style="@style/AddTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/title_carDeal_hint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_title_add_carDeal"
+                android:layout_marginLeft="16dp"/>
+
+        <!-- carDeal input -->
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_carDeal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:background="#EEFFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/til_amount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_carDeal_add"
+                android:layout_marginLeft="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_add_carDeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title_carDeal_hint"
+                    android:inputType="text|textCapSentences"
+                    android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- country title -->
+        <TextView
+                android:id="@+id/text_country_add"
+                style="@style/AddTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_country_hint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_carDeal"
+                android:layout_marginLeft="16dp"/>
+
+        <!-- country spinner -->
+        <Spinner
+                android:id="@+id/spinner_country"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_country_add"
+                android:layout_marginLeft="16dp"/>
+
+
+        <!-- Amount title -->
+        <TextView
+                android:id="@+id/text_amount_add"
+                style="@style/AddTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_amount_hint"
+                app:layout_constraintStart_toStartOf="@+id/til_amount"
+                app:layout_constraintTop_toBottomOf="@id/til_carDeal" />
+
+        <!-- Amount input -->
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_amount"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="53dp"
+                android:background="#EEFFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/spinner_country"
+                app:layout_constraintTop_toBottomOf="@id/text_amount_add"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="53dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_add_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits=".0123456789"
+                    android:hint="@string/add_amount_format_hint"
+                    android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Date title -->
+        <TextView
+                android:id="@+id/text_date_add"
+                style="@style/AddTitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_date_hint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_country"
+                android:layout_marginLeft="16dp"/>
+
+        <!-- Date input -->
+
+        <DatePicker
+                android:id="@+id/picker_date"
+                android:headerBackground="#FFC300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="calendar"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
+                android:background="#EEFFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_date_add"
+                android:layout_marginLeft="4dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@drawable/ic_menu_add"
+                android:tint="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="VectorDrawableCompat"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:background="@drawable/black_abstract"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <!-- Main title -->
+    <TextView
+            android:id="@+id/text_title_all"
+            style="@style/FragmentTitles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/country_all_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RecyclerView titles: Car Deal, Country, Date, Total -->
+
+    <TextView
+            android:id="@+id/text_title_carDeal"
+            style="@style/RvTitles"
+            android:layout_width="120dp"
+            android:text="@string/title_carDeal_hint"
+            android:layout_marginStart="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/text_title_Country"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_all" 
+            android:layout_marginLeft="6dp"/>
+
+    <TextView
+            android:id="@+id/text_title_Country"
+            style="@style/RvTitles"
+            android:layout_width="120dp"
+            android:text="@string/title_country_hint"
+            app:layout_constraintEnd_toStartOf="@+id/text_title_date"
+            app:layout_constraintStart_toEndOf="@+id/text_title_carDeal"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_all" />
+
+
+    <TextView
+            android:id="@+id/text_title_date"
+            style="@style/RvTitles"
+            android:layout_width="80dp"
+            android:text="@string/title_date_hint"
+            app:layout_constraintStart_toEndOf="@id/text_title_Country"
+            app:layout_constraintEnd_toStartOf="@id/text_title_amount"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_all" />
+
+    <TextView
+            android:id="@+id/text_title_amount"
+            style="@style/RvTitles"
+            android:layout_width="80dp"
+            android:text="@string/title_amount_hint"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintStart_toEndOf="@id/text_title_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title_all" android:layout_marginRight="6dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_carDealsPerCountry"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="#BBFFFFFF"
+            app:layout_constraintBottom_toTopOf="@id/text_carDeals_totals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title_carDeal" />
+
+
+    <TextView
+            android:id="@+id/text_carDeals_totals"
+            style="@style/Totals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/totals_carDeals_hint"
+            app:layout_constraintBottom_toTopOf="@id/text_income_totals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_carDealsPerCountry" android:layout_marginRight="16dp"/>
+
+    <TextView
+            android:id="@+id/text_income_totals"
+            style="@style/Totals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/totals_own_place_hint"
+            app:layout_constraintBottom_toTopOf="@id/text_total_totals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_carDeals_totals" 
+            android:layout_marginRight="16dp"/>
+
+    <TextView
+            android:id="@+id/text_total_totals"
+            style="@style/Totals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_rectangle"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/totals_total_hint"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_income_totals" 
+            android:layout_marginRight="16dp"/>
+
+    <ScrollView
+            android:id="@+id/scrollview_trivia"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_carDeals_totals"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_carDealsPerCountry" 
+            android:layout_marginLeft="10dp">
+
+        <TextView
+                android:id="@+id/text_trivia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trivia_text_hint"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

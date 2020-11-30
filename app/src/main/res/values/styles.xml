@@ -1,10 +1,77 @@
 <resources>
+
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- For the fragment titles (not labels) -->
+    <style name="FragmentTitles">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+<!--        <item name="android:textAlignment">center</item>-->
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <!-- For the Add CarDeals titles -->
+    <style name="AddTitles" parent="FragmentTitles">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- For the rv titles -->
+    <style name="RvTitles" parent="FragmentTitles">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">22dp</item>
+        <item name="android:layout_height">wrap_content</item>
+<!--        <item name="android:textAlignment">viewStart</item>-->
+    </style>
+
+    <!-- For the totals rv items -->
+    <style name="TotalsRvItems">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- For the buttons -->
+    <style name="Buttons">
+<!--        <item name="android:backgroundTint">@color/colorPrimary</item>-->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- For the country buttons -->
+    <style name="CountryButtons">
+<!--        <item name="android:backgroundTint">@android:color/holo_blue_dark</item>-->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginTop">8dp</item>
+<!--        <item name="android:layout_marginStart">62dp</item>-->
+<!--        <item name="android:layout_marginEnd">62dp</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- For the Totals lines -->
+    <style name="Totals">
+        <item name="android:textSize">16sp</item>
+<!--        <item name="android:textAlignment">viewEnd</item>-->
+        <item name="android:textColor">#FFF</item>
+<!--        <item name="android:layout_marginEnd">22dp</item>-->
+    </style>
+
 
 </resources>
