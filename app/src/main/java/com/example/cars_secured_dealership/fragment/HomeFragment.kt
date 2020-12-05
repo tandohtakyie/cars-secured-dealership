@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cars_secured_dealership.R
+import com.example.cars_secured_dealership.activity.EXTRA_CARDEAL
+import com.example.cars_secured_dealership.activity.EditCarDealActivity
 import com.example.cars_secured_dealership.adapter.SharedCarDealAdapter
 import com.example.cars_secured_dealership.model.CarDeal
 import com.example.cars_secured_dealership.viewmodel.SharedViewModel
@@ -83,7 +85,7 @@ class HomeFragment : Fragment() {
         }
         return ItemTouchHelper(callback)
     }
-    
+
     private fun onCarDealClicked(carDeal: CarDeal){
         val intent = Intent(activity, EditCarDealActivity::class.java)
         val bundle = Bundle()

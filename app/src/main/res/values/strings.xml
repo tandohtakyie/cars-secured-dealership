@@ -64,4 +64,7 @@
     <string name="trivia_text_hint">Fortune of the day:\nFor good luck, hide %s %s under your bed because %s</string>
     <string name="trivia_empty_hint">It\'s so empty in here…</string>
 
+    <string name="carDeal_updated">Car Deal updated</string>
+    <string name="total_title">Totals</string>
+
 </resources>
