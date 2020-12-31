@@ -58,6 +58,9 @@ class TotalsFragment : Fragment() {
         button_spain.setOnClickListener{
             startIntent("Spain")
         }
+        button_own_place.setOnClickListener{
+            startIntent("Own Place")
+        }
         button_france.setOnClickListener{
             startIntent("France")
         }
