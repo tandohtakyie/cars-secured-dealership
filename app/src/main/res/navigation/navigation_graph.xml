@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation_graph"
+            app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.cars_secured_dealership.fragment.HomeFragment"
+        android:label="Car Deal Secured"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCarDealFragment"
+        android:name="com.example.cars_secured_dealership.fragment.AddCarDealFragment"
+        android:label="Add Car Deal"
+        tools:layout="@layout/fragment_add_cardeal">
+    </fragment>
+
+    <fragment
+        android:id="@+id/totalsFragment"
+        android:name="com.example.cars_secured_dealership.fragment.TotalsFragment"
+        android:label="Totals"
+        tools:layout="@layout/fragment_totals" />
+
+</navigation>

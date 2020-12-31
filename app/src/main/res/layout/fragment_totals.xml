@@ -68,7 +68,7 @@
         <Button
                 android:id="@+id/button_south_korea"
                 style="@style/CountryButtons"
-                android:text="@string/menu_home_hint"
+                android:text="@string/country_south_korea_hint"
                 app:layout_constraintTop_toBottomOf="@+id/button_japan"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
