@@ -5,4 +5,5 @@
     <color name="colorAccent">#ff1ea1</color>
     <color name="colorPickerHeader">#b7ff1e</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorToolBar">#444544</color>
 </resources>

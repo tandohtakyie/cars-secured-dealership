@@ -5,13 +5,13 @@
     <string name="menu_add_hint">Add</string>
 
     <!-- General strings -->
-    <string name="title_carDeal_hint">Car Deals</string>
+    <string name="title_carDeal_hint">Car Deal</string>
     <string name="title_country_hint">Country</string>
     <string name="title_amount_hint">Amount</string>
     <string name="title_date_hint">Date</string>
 
     <!-- HomeFragment -->
-    <string name="home_recent_activity_hint">Recent activity</string>
+    <string name="home_recent_activity_hint">Recent Car Deals Activity</string>
 
     <!-- AddCarDealFragment -->
     <string name="add_amount_format_hint">e.g. 1.20</string>

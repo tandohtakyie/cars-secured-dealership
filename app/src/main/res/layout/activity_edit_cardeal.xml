@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/black_abstract"
+            android:background="@drawable/white_abstract"
             tools:context=".activity.EditCarDealActivity">
 
         <!-- Main title -->

@@ -7,7 +7,7 @@
                                                    tools:context=".fragment.HomeFragment">
 
     <TextView
-            android:id="@+id/text_title_recent_activity"
+            android:id="@+id/text_title_recent_car_deal_activity"
             style="@style/FragmentTitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -16,51 +16,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-            android:id="@+id/text_title_carDeal"
-            style="@style/RvTitles"
-            android:layout_width="120dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/title_carDeal_hint"
-            app:layout_constraintEnd_toStartOf="@id/text_title_country"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_title_recent_activity"
-            android:layout_marginLeft="6dp"/>
-
-    <TextView
-            android:id="@+id/text_title_country"
-            style="@style/RvTitles"
-            android:layout_width="120dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/title_country_hint"
-            app:layout_constraintEnd_toStartOf="@+id/text_title_date"
-            app:layout_constraintStart_toEndOf="@+id/text_title_carDeal"
-            app:layout_constraintTop_toBottomOf="@+id/text_title_recent_activity" />
-
-
-    <TextView
-            android:id="@+id/text_title_date"
-            style="@style/RvTitles"
-            android:layout_width="80dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/title_date_hint"
-            app:layout_constraintEnd_toStartOf="@id/text_title_amount"
-            app:layout_constraintStart_toEndOf="@id/text_title_country"
-            app:layout_constraintTop_toBottomOf="@+id/text_title_recent_activity" />
-
-    <TextView
-            android:id="@+id/text_title_amount"
-            style="@style/RvTitles"
-            android:layout_width="80dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="6dp"
-            android:text="@string/title_amount_hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/text_title_date"
-            app:layout_constraintTop_toBottomOf="@+id/text_title_recent_activity"
-            android:layout_marginRight="6dp"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -74,7 +29,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_title_country" />
+            app:layout_constraintTop_toBottomOf="@+id/text_title_recent_car_deal_activity" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
