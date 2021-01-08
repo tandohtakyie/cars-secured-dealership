@@ -56,9 +56,9 @@
     <string name="country_belgium_hint">Belgium</string>
     <string name="country_south_africa_hint">South Africa</string>
 
-    <string name="totals_carDeals_hint">- Car Deals: %s \u20ac</string>
-    <string name="totals_own_place_hint">+ Own Place: %s \u20ac</string>
-    <string name="totals_total_hint">Total: %s \u20ac</string>
+    <string name="totals_carDeals_hint">- Car Deals: \u20ac %s </string>
+    <string name="totals_own_place_hint">+ Own Place: \u20ac %s </string>
+    <string name="totals_total_hint">Total: \u20ac %s </string>
 
     <!-- Trivia -->
     <string name="trivia_text_hint">Quote of the day:\n %s . %s and you know, %s</string>
