@@ -9,3 +9,5 @@ Click on a deal to edit its information. The fields will be preset with the orig
 
 # Deleting a deal
 On the deals lists, you simply have to swipe left to delete a single item.
+
+Test Read me
